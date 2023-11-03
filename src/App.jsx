@@ -51,6 +51,7 @@ function App() {
                   <div className="p-2 w-full md:w-1/4 border-2 border-dotted ">
                     <a
                       href="https://jailerwebdeveloper.github.io/-Jailer-Portfolio/"
+                      target="_blank"
                       className="group-hover:animate-pulse flex items-center justify-center gap-2 break-words hover:link hover:text-info"
                     >
                       <AiFillProject/>Portfolio
