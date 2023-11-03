@@ -42,7 +42,7 @@ function App() {
                 <div className="flex w-full md:flex-row flex-col text-center  items-center">
                   <div className="p-2 w-full md:w-1/4 border-2 border-dotted ">
                     <a
-                      href="mailto:jailerwebwork@gmail.com"
+                      href="tel:+57322286188"
                       className=" flex items-center justify-center gap-2 break-words hover:link hover:text-info"
                     >
                       <AiFillPhone/>(+57) 322 286 1882
@@ -50,7 +50,7 @@ function App() {
                   </div>
                   <div className="p-2 w-full md:w-1/4 border-2 border-dotted ">
                     <a
-                      href="mailto:jailerwebwork@gmail.com"
+                      href="https://jailerwebdeveloper.github.io/-Jailer-Portfolio/"
                       className="group-hover:animate-pulse flex items-center justify-center gap-2 break-words hover:link hover:text-info"
                     >
                       <AiFillProject/>Portfolio
@@ -87,6 +87,7 @@ function App() {
                   <span className="font-bold">Back End : </span>Django | Flask |
                   MongoDB | MySQL | Node | Docker | git | Github | Gitlab | AWS
                 </p>
+                
                 <p className="text-lg font-mono mt-2">
                   I'm a web developer skilled in Front End (
                   <span className="font-semibold">
