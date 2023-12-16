@@ -1,9 +1,13 @@
 import React, { Fragment, useState } from "react";
 import "./App.css";
 import html2pdf from "html2pdf.js";
-import { AiFillGithub,AiOutlineLinkedin,AiFillProject,AiFillPhone } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiOutlineLinkedin,
+  AiFillProject,
+  AiFillPhone,
+} from "react-icons/ai";
 import Footer from "./Footer";
-
 
 function App() {
   const [theme, setTheme] = useState("dark"); // El tema inicial es "light".
@@ -11,7 +15,7 @@ function App() {
   const downloadAsPDF = () => {
     const element = document.getElementById("cv");
 
-    html2pdf().from(element).save('mi-cv.pdf');
+    html2pdf().from(element).save("mi-cv.pdf");
   };
 
   function toggleTheme() {
@@ -22,7 +26,6 @@ function App() {
     <Fragment>
       <div className="h-full relative" data-theme={theme}>
         <div className="w-full h-full p-10 ">
-        
           <div
             id="cv"
             className="w-full flex justify-center flex-col items-center"
@@ -32,10 +35,15 @@ function App() {
                 <p className="text-primary uppercase tracking-wide text-3xl">
                   Jailer eduardo vega meza
                 </p>
-                <p className=" mt-2 text-center">Frontend Developer | Colombia | <a
-                      href="mailto:jailerwebwork@gmail.com"
-                      className=" break-words hover:link hover:text-info"
-                    >jailerwebwork@gmail.com</a></p>
+                <p className=" mt-2 text-center">
+                  Frontend Developer | Colombia |{" "}
+                  <a
+                    href="mailto:jailerwebwork@gmail.com"
+                    className=" break-words hover:link hover:text-info"
+                  >
+                    jailerwebwork@gmail.com
+                  </a>
+                </p>
               </div>
 
               <div className="w-full">
@@ -45,7 +53,8 @@ function App() {
                       href="tel:+57322286188"
                       className=" flex items-center justify-center gap-2 break-words hover:link hover:text-info"
                     >
-                      <AiFillPhone/>(+57) 322 286 1882
+                      <AiFillPhone />
+                      (+57) 322 286 1882
                     </a>
                   </div>
                   <div className="p-2 w-full md:w-1/4 border-2 border-dotted ">
@@ -54,7 +63,8 @@ function App() {
                       target="_blank"
                       className="group-hover:animate-pulse flex items-center justify-center gap-2 break-words hover:link hover:text-info"
                     >
-                      <AiFillProject/>Portfolio
+                      <AiFillProject />
+                      Portfolio
                     </a>
                   </div>
                   <div className="p-2 w-full md:w-1/4 border-2 border-dotted ">
@@ -68,7 +78,7 @@ function App() {
                   </div>
                   <div className="p-2 w-full md:w-1/4  border-2 border-dotted ">
                     <a
-                      href="https://github.com/JailerWebdeveloper"
+                      href="https://www.linkedin.com/in/jailer-dev-frontend/"
                       target="_blank"
                       className=" place-content-center  flex items-center justify-center gap-2 break-words md:hover:link md:hover:text-info"
                     >
@@ -81,29 +91,27 @@ function App() {
               <div className="p-4">
                 <p className="text-lg font-mono mt-2">
                   <span className="font-bold">Front End : </span>HTML5 | CSS3 |
-                  Reactjs | ReactNative | Astrojs | Javascript | ES6 | Tailwind
-                  | Nodejs | SaSS{" "}
+                  Reactjs | Javascript | Typescript | Tailwind | Material UI
                 </p>
                 <p className="text-lg font-mono mt-2">
-                  <span className="font-bold">Back End : </span>Django | Flask |
-                  MongoDB | MySQL | Node | Docker | git | Github | Gitlab | AWS
+                  <span className="font-bold">Back End : </span>Django | MongoDB
+                  | MySQL | Docker
                 </p>
-                
+
                 <p className="text-lg font-mono mt-2">
-                  I'm a web developer skilled in Front End (
-                  <span className="font-semibold">
-                    HTML5, CSS3, React.js, React Native
-                  </span>
-                  ) and Back End (Django, Flask, Node.js) technologies. I create
-                  attractive, user-friendly interfaces with a focus on
-                  responsive design and attention to detail.
+                  I'm a web developer skilled in Front End Development with
+                  special interest in ReactJS. I have experience in developing
+                  web applications using ReactJS, NodeJS, and MongoDB. I am also
+                  familiar with the use of Docker for deployment and Git for
+                  version control. I am currently working on expanding my
+                  knowledge in Angular and new technologies.
                 </p>
                 <div className="my-4 divider text-xl font-bold">EXPERIENCE</div>
                 <div className="p-4 flex flex-col items-center justify-center gap-5">
                   <div>
                     <p className="text-xl font-semibold">
-                      Independent Developer University Project Management
-                      Platform | [07/2023-10/2023]
+                      University-level Graduation Project Management Application
+                      [07/2023-11/2023]
                     </p>
                     <p>
                       I worked as a Front End Developer, designing, programming,
@@ -112,6 +120,19 @@ function App() {
                       database using MySQL and Django, as well as utilized
                       Docker for its deployment on a Virtual Private Server
                       (VPS).
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xl font-semibold">
+                      Academic Publications Repository Application Platform |
+                      [07/2023-10/2023]
+                    </p>
+                    <p>
+                      "I worked on the development of an Academic Publications
+                      Repository application as a Front End Developer. My
+                      responsibilities included designing, programming, and
+                      implementing crucial components for the platform. I
+                      utilized MySQL and Node to create the database 
                     </p>
                   </div>
                   <div>
@@ -144,13 +165,11 @@ function App() {
                     </p>
                   </div>
                 </div>
-              
-                
               </div>
             </div>
           </div>
 
-          <Footer dowload={downloadAsPDF} toggle={toggleTheme}/>
+          <Footer dowload={downloadAsPDF} toggle={toggleTheme} />
         </div>
       </div>
     </Fragment>
