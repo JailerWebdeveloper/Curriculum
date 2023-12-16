@@ -124,7 +124,7 @@ function App() {
                   </div>
                   <div>
                     <p className="text-xl font-semibold">
-                      Academic Publications Repository Application Platform |
+                      Academic Publications Repository Application Platform 
                       [07/2023-10/2023]
                     </p>
                     <p>
